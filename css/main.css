@@ -225,6 +225,10 @@ hr.small {
     z-index: 1;
 }
 
+.projects h4 {
+    line-height: 150%;
+}
+
 .moreaboutme {
     display: table;
     width: 100%;
