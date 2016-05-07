@@ -251,9 +251,16 @@ hr.small {
     margin-bottom: 30px;
 }
 
+.portfolio-item h4 {
+    display: inline-block;
+    max-width: 75%;
+}
+
 .img-portfolio {
     margin: 0 auto;
-    border-radius: 10px 10px 10px 10px;
+    width:  250px;
+    height: 150px;
+    max-width: 100%;
 }
 
 .morecontent {
@@ -291,4 +298,9 @@ hr.small {
 
 footer {
     padding: 30px 0;
+}
+
+img {
+    border:2px solid #000;
+    border-radius: 5px;
 }
