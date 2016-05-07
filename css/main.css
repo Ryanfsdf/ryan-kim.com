@@ -308,3 +308,33 @@ img {
     border:2px solid #000;
     border-radius: 5px;
 }
+
+.slideanim {visibility:hidden;}
+.slides {
+    animation-name: slides;
+    -webkit-animation-name: slides; 
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    visibility: visible; 
+}
+@keyframes slides {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slides {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
