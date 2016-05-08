@@ -86,10 +86,10 @@ hr.small {
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
-    right: 0;
+    left: 0;
     width: 250px;
     height: 100%;
-    margin-right: -250px;
+    margin-left: -250px;
     overflow-y: auto;
     background: #222;
     -webkit-transition: all 0.4s ease 0s;
@@ -149,11 +149,11 @@ hr.small {
     z-index: 2;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
 }
 
 #sidebar-wrapper.active {
-    right: 250px;
+    left: 250px;
     width: 250px;
     -webkit-transition: all 0.5s ease 0s;
     -moz-transition: all 0.5s ease 0s;
@@ -351,6 +351,14 @@ img {
     border-radius: 5px;
 }
 
+.imgphoto {
+        width: 300px; 
+        height: auto; 
+        margin-right: 50px; 
+        margin-top: 15px;
+        float: left;
+}
+
 .slideanimleft, .slideanimright, .slideanim {visibility:hidden;}
 .slidesleft {
     animation-name: slidesleft;
@@ -437,6 +445,17 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+
+    .imgphoto {
+        float: none;
+        position: relative;
+    margin: auto;
+    left: 0; 
+    right: 0;
+    top: 0;
+    bottom: 0;  
+    }
+
     .slidesleft {
         animation-name: slidesleft;
         -webkit-animation-name: slidesleft; 
@@ -511,5 +530,11 @@ img {
 
 .header h2 {
     font-weight: 100;
+}
+
+
+.myimg img {
+    border-radius: 50%;
+    max-width: 100%;
 }
 
