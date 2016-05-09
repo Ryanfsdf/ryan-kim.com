@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Ryan Kim">
+    <meta name="author" content="Ryan Kim">
 
     <title>Ryan Kim</title>
 
@@ -344,31 +344,31 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script>
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
+	    $("#menu-close").click(function(e) {
+	        e.preventDefault();
+	        $("#sidebar-wrapper").toggleClass("active");
+	    });
 
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
+	    $("#menu-toggle").click(function(e) {
+	        e.preventDefault();
+	        $("#sidebar-wrapper").toggleClass("active");
+	    });
 
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+	    $(function() {
+	        $('a[href*=#]:not([href=#])').click(function() {
+	            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1500);
-                    return false;
-                }
-            }
-        });
-    });
+	                var target = $(this.hash);
+	                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+	                if (target.length) {
+	                    $('html,body').animate({
+	                        scrollTop: target.offset().top
+	                    }, 1500);
+	                    return false;
+	                }
+	            }
+	        });
+	    });
     </script>
     <script>
         function play(){
