@@ -11,6 +11,8 @@
 
     <title>Ryan Kim</title>
 
+	<link href="img/RK.png" rel="icon" type="image/png"/>
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <link href="css/hover.css" rel="stylesheet">
@@ -41,10 +43,7 @@
                 <a href="#morecontent" onclick = $("#menu-close").click(); >More About Me</a>
             </li>
             <li>
-                <a href="#resume" onclick = $("#menu-close").click(); >Resume</a>
-            </li>
-            <li>
-                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+                <a href="#morecontact" onclick = $("#menu-close").click(); >Contact</a>
             </li>
         </ul>
     </nav>
@@ -164,7 +163,7 @@
                         <div class="col-sm-4 slideanim">
                             <div class="portfolio-item hvr-float-shadow">
                                 <h2>
-                                    DontSnooze
+                                    Dont Snooze
                                 </h2>
                                 <a href="https://github.com/Ryanfsdf/DontSnooze">
                                     <img class="img-portfolio img-responsive" src="img/DontSnooze.jpg">
@@ -251,8 +250,8 @@
                     <div class="row">
                         <div class="col-md-6 slideanim portfolio-item">
                             <i class="fa fa-smile-o fa-5x" aria-hidden="true"></i>
-                            <h2>WHAT I FIND FUN</h2>
-                            <h4 align="justify">When I am not working on my <a href="#projects">projects</a>, you can find me snowboarding, listening to music, hanging out with friends, messing around with technology, playing ping pong, hiking, travelling, reading, taking photos, playing video games, watching movies, and trying out new things.</h4>
+                            <h2>INTERESTS</h2>
+                            <h4 align="justify">When I am not working on my <a href="#projects">projects</a>, you can find me snowboarding, listening to music, hanging out with friends, messing around with technology, playing ping pong, hiking, travelling, reading, taking photos, playing video games, watching movies, or trying out new things.</h4>
                         </div>
                         <div class="col-md-6 slideanim portfolio-item">
                             <i class="fa fa-list fa-5x" aria-hidden="true"></i>
@@ -265,22 +264,17 @@
         </div>
     </section>
 
-    <section id="resume" class="resume bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                	<i class="fa fa-file-text fa-5x" aria-hidden="true"></i>
-                	<br>
-                	<br>
-                    <h3>Click below to see a PDF of my resume</h3>
-                    <br>
-                    <a href="RyanKimResume.pdf" class="btn btn-lg btn-dark hvr-grow-shadow">My Current Resume</a>
-                </div>
+    <aside id="morecontact" class="morecontact">
+        <div class="text-vertical-center element4">
+        	<div class="container">
+        		<div class="col-md-12">
+            		<h1>Feel free to contact me!</h1>
+            	</div>
             </div>
         </div>
-    </section>
+    </aside>
 
-    <section id="contact" class="contact">
+    <section class="contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 text-center">
@@ -293,8 +287,7 @@
             	<div class="col-md-1">
             	</div>
                 <div class="col-md-4">
-                    <h4>Feel free to ask me any questions!</h4>
-                    <br>
+                	<br>
                     <h4><span class="glyphicon glyphicon-map-marker"></span> Waterloo, Ontario</h4>
                     <h4><span class="glyphicon glyphicon-phone"></span> (226) 792 3793</h4>
                     <h4><span class="glyphicon glyphicon-envelope"></span> manjun.kim@uwaterloo.ca</h4> 
@@ -392,6 +385,12 @@
           $('.element3').crossfade({
             start: 'img/moreaboutme.jpg',
             end: 'img/moreaboutme2.jpg',
+            threshold: 0.25,
+            backgroundPosition: 'center center'
+          });
+          $('.element4').crossfade({
+            start: 'img/contactme.jpg',
+            end: 'img/contactme2.jpg',
             threshold: 0.25,
             backgroundPosition: 'center center'
           });
