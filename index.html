@@ -19,27 +19,28 @@
 </head>
 
 <body>
+
     <a id="menu-toggle" href="#" class="btn btn btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn btn-lg pull-right toggle"><i class="fa fa-arrow-circle-left"></i></a>
             <li class="sidebar-brand">
-                <a href="#top" onclick="$(&quot;#menu-close&quot;).click();">Ryan Kim</a>
+                <a href="#top"  onclick = $("#menu-close").click(); >Ryan Kim</a>
             </li>
             <li>
-                <a href="#about" onclick="$(&quot;#menu-close&quot;).click();">Overview</a>
+                <a href="#about" onclick = $("#menu-close").click(); >Overview</a>
             </li>
             <li>
-                <a href="#workplaces" onclick="$(&quot;#menu-close&quot;).click();">Experience</a>
+                <a href="#workplaces" onclick = $("#menu-close").click(); >Experience</a>
             </li>
             <li>
-                <a href="#projects" onclick="$(&quot;#menu-close&quot;).click();">Projects</a>
+                <a href="#projects" onclick = $("#menu-close").click(); >Projects</a>
             </li>
             <li>
-                <a href="#morecontent" onclick="$(&quot;#menu-close&quot;).click();">More About Me</a>
+                <a href="#morecontent" onclick = $("#menu-close").click(); >More About Me</a>
             </li>
             <li>
-                <a href="#morecontact" onclick="$(&quot;#menu-close&quot;).click();">Contact</a>
+                <a href="#morecontact" onclick = $("#menu-close").click(); >Contact</a>
             </li>
         </ul>
     </nav>
@@ -52,9 +53,9 @@
 		            	<br><br><br><br><br><br>
 		                <h1>Ryan <span style="font-weight: 400;">Kim</span></h1>
 		                <h2><span class="typedelement"></span></h2>
-		                <a href="https://web.archive.org/web/20180806232116/https://github.com/Ryanfsdf"><i class="hvr-icon-grow fa fa-github-square fa-3x" aria-hidden="true"></i></a>
-		                <a href="https://web.archive.org/web/20180806232116/https://www.facebook.com/ryan.manjun.kim"><i class="hvr-icon-grow fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
-		                <a href="https://web.archive.org/web/20180806232116/https://ca.linkedin.com/in/ryanfsdf"><i class="hvr-icon-grow fa fa-linkedin-square fa-3x" aria-hidden="true">
+		                <a href="https://github.com/Ryanfsdf"><i class="hvr-icon-grow fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+		                <a href="https://www.facebook.com/ryan.manjun.kim"><i class="hvr-icon-grow fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+		                <a href="https://ca.linkedin.com/in/ryanfsdf"><i class="hvr-icon-grow fa fa-linkedin-square fa-3x" aria-hidden="true">
 		                </i></a>
 		                <br><br><br><br><br><br><br>
 	                </div>
@@ -78,10 +79,10 @@
             </div>
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 myimg text-justify">
-                    <p class="imgphoto"><img src="/web/20180806232116im_/http://ryan-kim.com/img/ryankimphoto.jpg"></p>
-                    <h3>Hi! I am a student <a href="https://web.archive.org/web/20180806232116/https://en.wikipedia.org/wiki/Software_developer">Software Developer</a> currently attending the <a href="https://web.archive.org/web/20180806232116/https://uwaterloo.ca/">University of Waterloo</a> for a <a href="https://web.archive.org/web/20180806232116/https://cs.uwaterloo.ca/">Bachelor of Computer Science</a>.</h3>
+                    <p class="imgphoto"><img src="img/ryankimphoto.jpg"></p>
+                    <h3>Hi! I am a student <a href="https://en.wikipedia.org/wiki/Software_developer">Software Developer</a> currently attending the <a href="https://uwaterloo.ca">University of Waterloo</a> for a <a href="https://cs.uwaterloo.ca">Bachelor of Computer Science</a>.</h3>
                     <h3>My legal name is 
-                    <span onclick="play()"><i class="fa fa-music"></i> Man-Jun</span> but my friends call me Ryan. Some people who read my name for the first time simply refer to me as "Man". Although my interests are broad, I love creating new things, whether it be designing and developing a new product at work, or hacking together some neat <a href="#projects"> projects</a> at Hackathons. Outside of software development, my hobbies include snowboarding, rafting, taking photos, and playing with new technology.
+                    <span onclick="play()"><i class="fa fa-music"></i> Man-Jun</span> but my friends call me Ryan. Some people who read my name for the first time simply refer to me as "Man". Although my interests are broad, I enjoy Software Engineering, Cloud Computing/Networks, and Machine Learning. I love programming and problem-solving in my free time and you can find me at various Hackathons working on some neat <a href="#projects"> projects</a>. Although I have lived in Canada for most of my life, I am fluent in both English and Korean.</h3>
                 </div>
             </div>
         </div>
@@ -103,47 +104,8 @@
                 <div class="col-lg-12 text-center">
                     <div class="row">
                         <div class="col-sm-4 slideanim myimg">
-                            <a href="https://web.archive.org/web/20180806232116/https://www.bloomberg.com/">
-                                <img src="/web/20180806232116im_/http://ryan-kim.com/img/bloomberg.jpg">
-                            </a>
-                        </div>
-                        <div class="col-sm-8 slideanim">
-                            <h2 style="display: inline">
-                                Bloomberg LP
-                            </h2>
-                            <h3 style="display: inline">
-                                - Software Engineering Intern
-                            </h3>
-                            <h4 class="pull-right" style="display: inline">
-                                Jan 2018 - Apr 2018
-                            </h4>
-                            <br>
-                            <br>
-                            <h4>
-                                - Worked on the Bloomberg Development Environment (BDE), a collection of fundamental C++ libraries used throughout Bloomberg
-                            </h4>
-                            <br>
-                            <h4>
-                                - Created a custom encoder for Google Protocol Buffers binary format on top of existing Bloomberg infrastructure, allowing external clients to communicate with Bloomberg services using a common open source framework for serializing structured data
-                            </h4>
-                            <br>
-                            <h4>
-                                - Built an XML schema converter to convert Bloomberg's proprietary XML schemas into schemas for open source data serialization frameworks
-                            </h4>
-                            <br>
-                            <h4>
-                                - Identified and resolved performance bottlenecks in high traffic, performance critical code
-                            </h4>
-                        </div>
-                    </div>
-                    
-                    <br>
-                    <br>
-                    <br>
-                    <div class="row">
-                        <div class="col-sm-4 slideanim myimg">
-                            <a href="https://web.archive.org/web/20180806232116/http://www.genesys.com/">
-                                <img src="/web/20180806232116im_/http://ryan-kim.com/img/genesys.png">
+                            <a href="http://www.genesys.com/">
+                                <img src="img/genesys.png">
                             </a>
                         </div>
                         <div class="col-sm-8 slideanim">
@@ -151,7 +113,7 @@
                                 Genesys
                             </h2>
                             <h3 style="display: inline">
-                                - Software Development Intern
+                                - Software Developer Intern
                             </h3>
                             <h4 class="pull-right" style="display: inline">
                                 Sep 2016 - Dec 2016
@@ -159,19 +121,19 @@
                             <br>
                             <br>
                             <h4>
-                                - Developed support for a new audio codec on the Genesys Voice Platform, the company's core telecommunications product
+                                - Independently developed support for a new audio codec on the company’s main selling call center platform written in C++, boosting call quality by up to 50%
                             </h4>
                             <br>
                             <h4>
-                                - Designed and launched an internal tool to aggregate C++ code coverage analysis results from distributed machines
+                                - Fully designed and created an internal C++ code coverage merging tool in Python, which was later showcased at the company’s progress report presentation
                             </h4>
                             <br>
                             <h4>
-                                - Introduced several Continuous Integration pipelines on Jenkins, streamlining development for recently pushed builds
+                                - Collaborated with Software Engineers and QA to implement the Python backend for an automated build status report system, accelerating development for recently pushed builds 
                             </h4>
                             <br>
                             <h4>
-                                - Improved developer efficiency by automating test status reporting for unit test builds. Results were used daily by all members of the team
+                                - Solely introduced and managed several core Continuous Integration builds on Jenkins CI, with builds used daily by all members of the team 
                             </h4>
                         </div>
                     </div>
@@ -181,8 +143,8 @@
 	                <br>
 	                <div class="row">
                         <div class="col-sm-4 slideanim myimg">
-                            <a href="https://web.archive.org/web/20180806232116/https://uwaterloo.ca/">
-                                <img src="/web/20180806232116im_/http://ryan-kim.com/img/uwaterloo.jpg">
+                            <a href="https://uwaterloo.ca/">
+                                <img src="img/uwaterloo.jpg">
                             </a>
                         </div>
                         <div class="col-sm-8 slideanim">
@@ -193,16 +155,16 @@
                                 - Teaching Assistant
                             </h3>
                             <h4 class="pull-right" style="display: inline">
-                                Jan 2017 - Dec 2017
+                                Jan 2017 - April 2017
                             </h4>
                             <br>
                             <br>
                             <h4>
-                                - Selected as a Teaching Assistant for "Linear Algebra for Engineering" and "Calculus 1 for Honors Mathematics" based on exceptional academic performance
+                                - Selected as a TA for "Linear Algebra for Engineering" based on exceptional academic performance
                             </h4>
                             <br>
                             <h4>
-                                - Corrected over 200 weekly assignments for 2nd year Engineering and Math students
+                                - Corrected over 200 weekly assignments for 2nd year Engineering students
                             </h4>
                         </div>
                     </div>
@@ -231,11 +193,11 @@
                                 <h2>
                                     WriTeX
                                 </h2>
-                                <a href="https://web.archive.org/web/20180806232116/http://www.writex.ca/">
-                                    <img class="img-portfolio img-responsive" src="/web/20180806232116im_/http://ryan-kim.com/img/WriTeX.png">
+                                <a href="https://github.com/Ryanfsdf/WriTeX">
+                                    <img class="img-portfolio img-responsive" src="img/WriTeX.png">
                                 </a>
                                 <h4>
-                                    Web app for writing and sharing LaTeX notes online. Made for EngHack 2016
+                                    Web app for writing and sharing LaTeX notes made for EngHack 2016
                                 </h4>
                             </div>
                         </div>
@@ -244,11 +206,11 @@
                                 <h2>
                                     Rhythm Tetris
                                 </h2>
-                                <a href="https://web.archive.org/web/20180806232116/https://github.com/Ryanfsdf/rhythm-tetris">
-                                    <img class="img-portfolio img-responsive" src="/web/20180806232116im_/http://ryan-kim.com/img/Tetris.jpg">
+                                <a href="https://github.com/Ryanfsdf/rhythm-tetris">
+                                    <img class="img-portfolio img-responsive" src="img/Tetris.jpg">
                                 </a>
                                 <h4>
-                                    Classic game of Tetris with pieces that drop to the sound of claps in real-time
+                                    Tetris with pieces that drop to the sound of claps in real-time
                                 </h4>
                             </div>
                         </div>
@@ -257,11 +219,11 @@
                                 <h2>
                                     Auto Mouse
                                 </h2>
-                                <a href="https://web.archive.org/web/20180806232116/https://github.com/Ryanfsdf/auto-mouse">
-                                    <img class="img-portfolio img-responsive" src="/web/20180806232116im_/http://ryan-kim.com/img/AutoMouse.jpg">
+                                <a href="https://github.com/Ryanfsdf/auto-mouse">
+                                    <img class="img-portfolio img-responsive" src="img/AutoMouse.jpg">
                                 </a>
                                 <h4>
-                                    Mouse macro recorder for recording and repeating mouse actions
+                                    Mouse macro recorder with GUI and save/load functionality
                                 </h4>
                             </div>
                         </div>
@@ -273,8 +235,8 @@
                                 <h2>
                                     Neat Beats
                                 </h2>
-                                <a href="https://web.archive.org/web/20180806232116/https://github.com/Ryanfsdf/neat-beats">
-                                    <img class="img-portfolio img-responsive" src="/web/20180806232116im_/http://ryan-kim.com/img/NeatBeats.jpg">
+                                <a href="https://github.com/Ryanfsdf/neat-beats">
+                                    <img class="img-portfolio img-responsive" src="img/NeatBeats.jpg">
                                 </a>
                                 <h4>
                                     Script for organizing large collections of music
@@ -286,11 +248,11 @@
                                 <h2>
                                     Pixel Ruler
                                 </h2>
-                                <a href="https://web.archive.org/web/20180806232116/https://github.com/Ryanfsdf/pixel-ruler">
-                                    <img class="img-portfolio img-responsive" src="/web/20180806232116im_/http://ryan-kim.com/img/PixelRuler.jpg">
+                                <a href="https://github.com/Ryanfsdf/pixel-ruler">
+                                    <img class="img-portfolio img-responsive" src="img/PixelRuler.jpg">
                                 </a>
                                 <h4>
-                                    Virtual ruler for measuring relative distances between points on a screen
+                                    Virtual Ruler for measuring relative distances between points on a screen
                                 </h4>
                             </div>
                         </div>
@@ -299,11 +261,11 @@
                                 <h2>
                                     Dont Snooze
                                 </h2>
-                                <a href="https://web.archive.org/web/20180806232116/https://github.com/Ryanfsdf/dont-snooze">
-                                    <img class="img-portfolio img-responsive" src="/web/20180806232116im_/http://ryan-kim.com/img/DontSnooze.jpg">
+                                <a href="https://github.com/Ryanfsdf/dont-snooze">
+                                    <img class="img-portfolio img-responsive" src="img/DontSnooze.jpg">
                                 </a>
                                 <h4>
-                                    Alarm clock made for Terrible Hacks Hackathon 2016
+                                    Alarm Clock made for Terrible Hacks Hackathon 2016
                                 </h4>
                             </div>
                         </div>
@@ -315,10 +277,10 @@
                                     Flash Game
                                 </h2>
                                 <a href="flashgame.html">
-                                    <img class="img-portfolio img-responsive" src="/web/20180806232116im_/http://ryan-kim.com/img/flashgame.jpg">
+                                    <img class="img-portfolio img-responsive" src="img/flashgame.jpg">
                                 </a>
                                 <h4>
-                                    A flash game I made when I was 13. This was one of my first programming projects. <a href="https://web.archive.org/web/20180806232116/https://get.adobe.com/flashplayer/">Adobe Flash Player</a> is required to play
+                                    A flash game I made when I was 13. This was one of my first programming projects. <a href="https://get.adobe.com/flashplayer/">Adobe Flash Player</a> is required to play
                                 </h4>
                             </div>
                         </div>
@@ -329,7 +291,7 @@
                                 </h2>
                                 <br>
                                 <h4>
-                                    Some projects I have made in school include a clone of the massively popular online game Hearthstone, a sudoku verifier, a tetris-piece backtracking algorithm, and many other smaller assignments.
+                                    Some projects I have done in school include a clone of the massively popular online game Hearthstone, a sudoku verifier, a tetris-piece backtracking algorithm, and many other smaller assignments.
                                 </h4>
                             </div>
                         </div>
@@ -340,12 +302,12 @@
                                 </h2>
                                 <br>
                                 <h4>
-                                    Some other non-programming related projects I have worked on include building computers, flashing custom phone firmware, and creating photo collections.
+                                    Some other non-programming related projects I have worked on include building computers, car-speaker mods, and flashing custom firmware on my phones.
                                 </h4>
                             </div>
                         </div>
                     </div>
-                    <a href="https://web.archive.org/web/20180806232116/https://github.com/Ryanfsdf" class="btn btn-dark btn-lg hvr-grow-shadow">More on Github</a>
+                    <a href="https://github.com/Ryanfsdf" class="btn btn-dark btn-lg hvr-grow-shadow">More on Github</a>
                 </div>
             </div>
         </div>
@@ -370,12 +332,12 @@
                         <div class="col-md-6 slideanim portfolio-item">
                             <i class="fa fa-book fa-5x" aria-hidden="true"></i>
                             <h2>EDUCATION</h2>
-                            <h4 align="justify">I am fortunate to be in my degree of choice because I enjoy my Computer Science courses as well as my math courses. I am currently a Teaching Assistant in the <a href="https://web.archive.org/web/20180806232116/https://uwaterloo.ca/math/">Faculty of Mathematics</a>. I plan on pursuing minors in <a href="https://web.archive.org/web/20180806232116/https://uwaterloo.ca/combinatorics-and-optimization/">Combinatorics &amp; Optimization</a> and <a href="https://web.archive.org/web/20180806232116/https://uwaterloo.ca/statistics-and-actuarial-science/">Statistics</a> in the future.</h4>
+                            <h4 align="justify">I am fortunate to be in my degree of choice because I enjoy my CS courses as well as my math courses. I am currently a Teaching Assistant in the <a href="https://uwaterloo.ca/math/">Faculty of Mathematics</a>. In my later years of University, I plan on pursuing minors (or possibly majors) in <a href="https://uwaterloo.ca/combinatorics-and-optimization/">Combinatorics & Optimization</a> and <a href="https://uwaterloo.ca/statistics-and-actuarial-science/">Statistics</a>.</h4>
                         </div>
                         <div class="col-md-6 slideanim portfolio-item">
                             <i class="fa fa-code fa-5x" aria-hidden="true"></i>
                             <h2>PROGRAMMING</h2>
-                            <h4 align="justify">I started programming when I was 13 with Adobe's <a href="https://web.archive.org/web/20180806232116/http://www.adobe.com/devnet/actionscript/articles/actionscript3_overview.html">ActionScript 3</a>. Since then, I have worked with many other languages like Python, C, C++, Java, Scala, etc. I have also learned various algorithms and greatly improved my problem solving ability through self-study, in-class material, and co-op.</h4>
+                            <h4 align="justify">I started programming when I was 13 with Adobe's <a href="http://www.adobe.com/devnet/actionscript/articles/actionscript3_overview.html">ActionScript 3</a>. Since then, I have worked with many other languages like Python, C, C++, Java, Scala, etc. I have also learned various algorithms and greatly improved my problem solving ability through self-study, in-class material, and co-op.</h4>
                         </div>
                     </div>
                     <br>
@@ -383,12 +345,12 @@
                         <div class="col-md-6 slideanim portfolio-item">
                             <i class="fa fa-smile-o fa-5x" aria-hidden="true"></i>
                             <h2>INTERESTS</h2>
-                            <h4 align="justify">In my free time, I am usually working on my <a href="#projects">projects</a> or going through coding problems on sites like <a href="https://web.archive.org/web/20180806232116/https://leetcode.com/">Leetcode</a>. Some other things you'll find me doing are snowboarding, reading about new technology, hanging out with friends, or taking photos.</h4>
+                            <h4 align="justify">In my free time, I am usually working on my <a href=#projects>projects</a> or going through coding problems on sites like <a href="https://leetcode.com/">Leetcode</a>. Some other things you'll find me doing are snowboarding, reading about new technology, hanging out with friends, or watching Netflix.</h4>
                         </div>
                         <div class="col-md-6 slideanim portfolio-item">
                             <i class="fa fa-list fa-5x" aria-hidden="true"></i>
                             <h2>BUCKET LIST</h2>
-                            <h4 align="justify">Some things I would like to do include skydiving, <a href="https://web.archive.org/web/20180806232116/https://www.youtube.com/watch?v=At3xcj-pTjg">flying on a drone</a>, solo backpacking through Europe, and going on a vacation to <a href="https://web.archive.org/web/20180806232116/http://www.seychelles.travel/">Seychelles</a>.</h4>
+                            <h4 align="justify">Some things I would like to do include skydiving, <a href="https://www.youtube.com/watch?v=At3xcj-pTjg">flying on a drone</a>, backpacking through Europe, and going on a vacation to <a href="http://www.seychelles.travel">Seychelles</a>.</h4>
                         </div>
                     </div>
                 </div>
@@ -457,15 +419,15 @@
                     </a>
                     <br>
                     <br>
-                    <p class="text-muted">Copyright &copy; Ryan Manjun Kim 2018</p>
+                    <p class="text-muted">Copyright &copy; Ryan Manjun Kim 2017</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="/web/20180806232116js_/http://ryan-kim.com/js/jquery.js"></script>
-    <script src="/web/20180806232116js_/http://ryan-kim.com/js/typed.js"></script>
-    <script src="/web/20180806232116js_/http://ryan-kim.com/js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <script>
 	    $("#menu-close").click(function(e) {
@@ -501,7 +463,7 @@
         }
     </script>
 
-    <script src="https://web.archive.org/web/20180806232116js_/https://cdn.rawgit.com/mikefowler/crossfade.js/master/dist/crossfade.jquery.js"></script>
+    <script src="https://cdn.rawgit.com/mikefowler/crossfade.js/master/dist/crossfade.jquery.js"></script>
     <script type="text/javascript">
         $(function () {
           $('.element').crossfade({
@@ -538,7 +500,7 @@
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://web.archive.org/web/20180806232116/https://www.google-analytics.com/analytics.js','ga');
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
       ga('create', 'UA-77336355-1', 'auto');
       ga('send', 'pageview');
